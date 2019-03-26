@@ -1,0 +1,278 @@
+# Site settings
+baseurl = ""
+DefaultContentLanguage = "ca"
+# languageCode = "en-us"
+theme = "highlights"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[languages]
+  [languages.ca]
+    weight = 1
+    languageName = "Català"
+    title = "Amigues i Amics del Roure"
+
+    [languages.ca.params]
+      # You can use Markdown for urls [text](//domain.tld/source)
+      #
+      # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+      # for more icons.
+
+      # To provide more meta data for search engings feel free to add a few informations.
+      # This lines will be inserted as meta tags.
+      name = "Your Name"
+      description = "Your Description"
+
+      # For a static site it's not possible to provide a contact form. The contact form uses
+      # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+      # Visitors can send up to a 1000 emails each month
+      #
+      # How to setup formspree
+      #
+      # - set your email address under 'email' below
+      # - upload the generated site to your server
+      # - send a dummy email to yourself to confirm your account
+      # - click the confirmation link in the email from www.formspree.io
+      # - That's all. Enjoy mailing!
+      email = "your@mail.com"
+
+      # If this param is set to true, every section gets an own background image (located at static/images)
+      # to change the image you could use the param picture on every section.
+      # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
+      backgroundpersection = true
+
+      # hero Section
+      [languages.ca.params.hero]
+        type = "hero"
+        title = "Amics i Amigues del Roure"
+        description = "Eos occaecati impedit perferendis repudiandae. Aut iste minima tenetur voluptatem occaecati ut."
+        buttontext = "Començar"
+        picture = "bg.jpg"
+
+      # about section
+      [[languages.ca.params.block]]
+        id = "about"
+        type = "text"
+        title = "Qui som"
+        description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+        buttontext = "next"
+        # the picture is stored at static/images/
+        picture = "bg1.jpg"
+
+      # skill section
+      [[languages.ca.params.block]]
+        id = "skills"
+        type = "list"
+        title = "Què fem"
+        description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
+        buttontext = "next"
+        # the picture is stored at static/images/
+        picture = "bg2.jpg"
+
+        [[languages.ca.params.block.item]]
+          icon = "fa-book"
+          title = "Magna Etiam"
+
+        [[languages.ca.params.block.item]]
+          icon = "fa-pencil"
+          title = "Lorem Ipsum"
+
+        [[languages.ca.params.block.item]]
+          icon = "fa-code"
+          title = "Nulla Tempus"
+
+        [[languages.ca.params.block.item]]
+          icon = "fa-coffee"
+          title = "Sed Feugiat"
+
+      # infos section
+      [[languages.ca.params.block]]
+        id = "infos"
+        type = "text"
+        title = "One more thing"
+        description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+        # the picture is stored at static/images/
+        picture = "bg2.jpg"
+
+#  # custom section
+#  [[languages.ca.params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is stored at static/images/
+#    picture = "pic04.jpg"
+
+      # contact form
+      [[languages.ca.params.block]]
+        id = "contact"
+        type = "contact"
+        title = "Vull ser part del grup"
+        picture = "bg4.jpg"
+
+        [languages.ca.params.block.form]
+          name = "El teu nom"
+          email = "El teu email"
+          buttontext = "apuntar-me!"
+
+      # footer section
+      # this section includes last block and social icons
+
+      [languages.ca.params.footer]
+        enable = true
+
+        # social icons
+        [languages.ca.params.footer.social_list]
+          enable = true
+
+          [[languages.ca.params.footer.social]]
+            title = "Twitter"
+            icon = "fa-twitter"
+            link = "#"
+
+          [[languages.ca.params.footer.social]]
+            title = "Facebook"
+            icon = "fa-facebook"
+            link = "#"
+
+          [[languages.ca.params.footer.social]]
+            title = "Instagramm"
+            icon = "fa-instagram"
+            link = "#"
+
+          [[languages.ca.params.footer.social]]
+            title = "Email"
+            icon = "fa-envelope"
+            link = "#"
+
+        # copyright
+        #[languages.ca.params.footer.copyright.notice]
+
+          [[languages.ca.params.footer.copyright.notice]]
+            text = "© Untitled"
+
+          [[languages.ca.params.footer.copyright.notice]]
+            text = "Design: [HTML5UP](//html5up.net)"
+
+          [[languages.ca.params.footer.copyright.notice]]
+            text = "Demo Images: [Unsplash](//unsplash.com/)"
+
+  [languages.es]
+    weight = 1
+    languageName = "Español"
+    title = "Amigas y Amigos del Roure"
+
+    [languages.es.params]
+      name = "Your Name"
+      description = "Your Description"
+      email = "your@mail.com"
+      backgroundpersection = true
+
+      [languages.es.params.hero]
+        type = "hero"
+        title = "Amigas y Amigos del Roure"
+        description = "Eos occaecati impedit perferendis repudiandae. Aut iste minima tenetur voluptatem occaecati ut."
+        buttontext = "Empezar"
+        picture = "bg2.jpg"
+
+      # about section
+      [[languages.es.params.block]]
+        id = "about"
+        type = "text"
+        title = "Qui som"
+        description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+        buttontext = "next"
+        # the picture is stored at static/images/
+        picture = "bg1.jpg"
+
+      # skill section
+      [[languages.es.params.block]]
+        id = "skills"
+        type = "list"
+        title = "Què fem"
+        description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
+        buttontext = "next"
+        # the picture is stored at static/images/
+        picture = "bg4.jpg"
+
+        [[languages.es.params.block.item]]
+          icon = "fa-book"
+          title = "Magna Etiam"
+
+        [[languages.es.params.block.item]]
+          icon = "fa-pencil"
+          title = "Lorem Ipsum"
+
+        [[languages.es.params.block.item]]
+          icon = "fa-code"
+          title = "Nulla Tempus"
+
+        [[languages.es.params.block.item]]
+          icon = "fa-coffee"
+          title = "Sed Feugiat"
+
+      # infos section
+      [[languages.es.params.block]]
+        id = "infos"
+        type = "text"
+        title = "One more thing"
+        description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
+        # the picture is stored at static/images/
+        picture = "bg5.jpg"
+
+      # contact form
+      [[languages.es.params.block]]
+        id = "contact"
+        type = "contact"
+        title = "Get in Touch"
+        picture = "bg6.jpg"
+
+        [languages.es.params.block.form]
+          name = "Name"
+          email = "Your Email"
+          message = "Your Message"
+          buttontext = "send message"
+
+      # footer section
+      # this section includes last block and social icons
+
+      [languages.es.params.footer]
+        enable = true
+
+        # social icons
+        [languages.es.params.footer.social_list]
+          enable = true
+
+          [[languages.es.params.footer.social]]
+            title = "Twitter"
+            icon = "fa-twitter"
+            link = "#"
+
+          [[languages.es.params.footer.social]]
+            title = "Facebook"
+            icon = "fa-facebook"
+            link = "#"
+
+          [[languages.es.params.footer.social]]
+            title = "Instagramm"
+            icon = "fa-instagram"
+            link = "#"
+
+          [[languages.es.params.footer.social]]
+            title = "Email"
+            icon = "fa-envelope"
+            link = "#"
+
+        # copyright
+        #[languages.es.params.footer.copyright.notice]
+
+          [[languages.es.params.footer.copyright.notice]]
+            text = "© Untitled"
+
+          [[languages.es.params.footer.copyright.notice]]
+            text = "Design: [HTML5UP](//html5up.net)"
+
+          [[languages.es.params.footer.copyright.notice]]
+            text = "Demo Images: [Unsplash](//unsplash.com/)"

@@ -1,0 +1,34 @@
+<!--
+If you want to include any custom html just before </head>, put it in /layouts/partials/head_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/head_custom.html doesn't exist.
+-->
+<style>
+ul.langbar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+    z-index: 100;
+}
+ul.langbar a {
+    color: #6f7577;
+    border: none;
+}
+</style>
+
+<ul class="langbar">
+  {{ if .IsTranslated -}}
+    {{ range .Translations }}
+        <li><a rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Lang }}</a></li>
+    {{ end -}}
+    {{ else -}}
+      {{ range .Site.Languages -}}
+        {{ if ne $.Site.Language.Lang .Lang }}
+          <li><a rel="alternate" href="/{{ .Lang }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Lang }}</a></li>
+      {{ end -}}
+    {{ end -}}
+  {{ end -}}
+</ul>
