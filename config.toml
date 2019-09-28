@@ -46,7 +46,7 @@ googleAnalytics = ""
       [languages.ca.params.hero]
         type = "hero"
         title = "Amics i Amigues del Roure"
-        description = "Eos occaecati impedit perferendis repudiandae. Aut iste minima tenetur voluptatem occaecati ut."
+        description = "AEos occaecati impedit perferendis repudiandae. Aut iste minima tenetur voluptatem occaecati ut."
         buttontext = "Començar"
         picture = "bg.jpg"
 
